@@ -1,0 +1,37 @@
+{
+  "samples": 25596,
+  "macro_auroc": 0.7876955531993376,
+  "per_class_auroc": {
+    "Atelectasis": 0.7538493316854484,
+    "Cardiomegaly": 0.8732282511974069,
+    "Effusion": 0.8204590493735601,
+    "Infiltration": 0.6928179332068412,
+    "Mass": 0.794894577365266,
+    "Nodule": 0.7193777688747655,
+    "Pneumonia": 0.7018783969065507,
+    "Pneumothorax": 0.8233981494201177,
+    "Consolidation": 0.7219148026939579,
+    "Edema": 0.8404547192403378,
+    "Emphysema": 0.8754669732731346,
+    "Fibrosis": 0.8167845968514491,
+    "Pleural_Thickening": 0.7463663129500953,
+    "Hernia": 0.8468468817517982
+  },
+  "positive_counts": {
+    "Atelectasis": 3279,
+    "Cardiomegaly": 1069,
+    "Effusion": 4658,
+    "Infiltration": 6112,
+    "Mass": 1748,
+    "Nodule": 1623,
+    "Pneumonia": 555,
+    "Pneumothorax": 2665,
+    "Consolidation": 1815,
+    "Edema": 925,
+    "Emphysema": 1093,
+    "Fibrosis": 435,
+    "Pleural_Thickening": 1143,
+    "Hernia": 86
+  },
+  "patients": 2797
+}

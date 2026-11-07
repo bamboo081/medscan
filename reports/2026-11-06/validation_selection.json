@@ -1,0 +1,71 @@
+{
+  "mri": {
+    "comparison": [
+      {
+        "run": "runs/mri_convnext_tiny_20261106",
+        "model": "convnext_tiny",
+        "task": "multiclass",
+        "manifest_sha256": "f83d454e12abd03e9486bd3c7ad88bcf1ed4603f249fc88a29cf7f514dae36f4",
+        "metric": "val_patient_macro_f1",
+        "best_validation_score": 1.0,
+        "checkpoint": "runs/mri_convnext_tiny_20261106/best.pt"
+      },
+      {
+        "run": "runs/mri_resnet18",
+        "model": "resnet18",
+        "task": "multiclass",
+        "manifest_sha256": "f83d454e12abd03e9486bd3c7ad88bcf1ed4603f249fc88a29cf7f514dae36f4",
+        "metric": "val_patient_macro_f1",
+        "best_validation_score": 0.9607843137254902,
+        "checkpoint": "runs/mri_resnet18/best.pt"
+      }
+    ],
+    "selected": {
+      "run": "runs/mri_convnext_tiny_20261106",
+      "model": "convnext_tiny",
+      "task": "multiclass",
+      "manifest_sha256": "f83d454e12abd03e9486bd3c7ad88bcf1ed4603f249fc88a29cf7f514dae36f4",
+      "metric": "val_patient_macro_f1",
+      "best_validation_score": 1.0,
+      "checkpoint": "runs/mri_convnext_tiny_20261106/best.pt"
+    }
+  },
+  "ct": {
+    "comparison": [
+      {
+        "run": "runs/ct_grouped_convnext_tiny",
+        "model": "convnext_tiny",
+        "task": "multiclass",
+        "manifest_sha256": "4078d2e9a58e966db51f299f402db29a84ddeb67b898f7196711d4550afd2b7d",
+        "metric": "val_macro_f1",
+        "best_validation_score": 0.96628818442147,
+        "checkpoint": "runs/ct_grouped_convnext_tiny/best.pt"
+      },
+      {
+        "run": "runs/ct_grouped_efficientnet_b0_20261106",
+        "model": "efficientnet_b0",
+        "task": "multiclass",
+        "manifest_sha256": "4078d2e9a58e966db51f299f402db29a84ddeb67b898f7196711d4550afd2b7d",
+        "metric": "val_macro_f1",
+        "best_validation_score": 0.9644348298451382,
+        "checkpoint": "runs/ct_grouped_efficientnet_b0_20261106/best.pt"
+      }
+    ],
+    "selected": {
+      "run": "runs/ct_grouped_convnext_tiny",
+      "model": "convnext_tiny",
+      "task": "multiclass",
+      "manifest_sha256": "4078d2e9a58e966db51f299f402db29a84ddeb67b898f7196711d4550afd2b7d",
+      "metric": "val_macro_f1",
+      "best_validation_score": 0.96628818442147,
+      "checkpoint": "runs/ct_grouped_convnext_tiny/best.pt"
+    }
+  },
+  "xray": {
+    "selected": {
+      "run": "runs/nih_resnet18_ap_cached_20261106",
+      "checkpoint": "runs/nih_resnet18_ap_cached_20261106/best.pt"
+    },
+    "reason": "Only candidate trained with current weighted loss/AP-selection protocol. Historical AUROC-selected run is not a controlled comparison."
+  }
+}

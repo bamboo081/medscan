@@ -1,0 +1,300 @@
+{
+  "mri": {
+    "run": "mri_convnext_tiny_20261106",
+    "checkpoint_sha256": "8a45a1919f5a93a85501a651848fc843d5201a67d7de10e1c762f57e4b368d93",
+    "best_epoch": 2,
+    "test_metrics": {
+      "samples": 306,
+      "macro_f1": 0.913626014599275,
+      "balanced_accuracy": 0.9084999507534719,
+      "confusion_matrix": [
+        [
+          140,
+          3,
+          0
+        ],
+        [
+          5,
+          53,
+          13
+        ],
+        [
+          0,
+          0,
+          92
+        ]
+      ],
+      "class_report": {
+        "glioma": {
+          "precision": 0.9655172413793104,
+          "recall": 0.9790209790209791,
+          "f1-score": 0.9722222222222222,
+          "support": 143.0
+        },
+        "meningioma": {
+          "precision": 0.9464285714285714,
+          "recall": 0.7464788732394366,
+          "f1-score": 0.8346456692913385,
+          "support": 71.0
+        },
+        "pituitary": {
+          "precision": 0.8761904761904762,
+          "recall": 1.0,
+          "f1-score": 0.934010152284264,
+          "support": 92.0
+        },
+        "accuracy": 0.9313725490196079,
+        "macro avg": {
+          "precision": 0.9293787629994527,
+          "recall": 0.9084999507534719,
+          "f1-score": 0.913626014599275,
+          "support": 306.0
+        },
+        "weighted avg": {
+          "precision": 0.9342317578372346,
+          "recall": 0.9313725490196079,
+          "f1-score": 0.9288122689791343,
+          "support": 306.0
+        }
+      },
+      "patients": 23,
+      "patient_macro_f1": 0.9521367521367522,
+      "patient_confusion_matrix": [
+        [
+          9,
+          0,
+          0
+        ],
+        [
+          0,
+          7,
+          1
+        ],
+        [
+          0,
+          0,
+          6
+        ]
+      ]
+    }
+  },
+  "ct": {
+    "run": "ct_grouped_convnext_tiny",
+    "checkpoint_sha256": "11e2de368d573aec97d41c40e6170c5afb8bfcc16e62fe423e7a565172d53561",
+    "best_epoch": 5,
+    "test_metrics": {
+      "samples": 1184,
+      "macro_f1": 0.9655805281882869,
+      "balanced_accuracy": 0.9639291894933537,
+      "confusion_matrix": [
+        [
+          309,
+          0,
+          10,
+          1
+        ],
+        [
+          1,
+          500,
+          0,
+          0
+        ],
+        [
+          10,
+          0,
+          118,
+          0
+        ],
+        [
+          0,
+          7,
+          0,
+          228
+        ]
+      ],
+      "class_report": {
+        "cyst": {
+          "precision": 0.965625,
+          "recall": 0.965625,
+          "f1-score": 0.965625,
+          "support": 320.0
+        },
+        "normal": {
+          "precision": 0.9861932938856016,
+          "recall": 0.998003992015968,
+          "f1-score": 0.9920634920634921,
+          "support": 501.0
+        },
+        "stone": {
+          "precision": 0.921875,
+          "recall": 0.921875,
+          "f1-score": 0.921875,
+          "support": 128.0
+        },
+        "tumor": {
+          "precision": 0.9956331877729258,
+          "recall": 0.9702127659574468,
+          "f1-score": 0.9827586206896551,
+          "support": 235.0
+        },
+        "accuracy": 0.9755067567567568,
+        "macro avg": {
+          "precision": 0.9673316204146318,
+          "recall": 0.9639291894933537,
+          "f1-score": 0.9655805281882869,
+          "support": 1184.0
+        },
+        "weighted avg": {
+          "precision": 0.9755545940568614,
+          "recall": 0.9755067567567568,
+          "f1-score": 0.9754831802245595,
+          "support": 1184.0
+        }
+      }
+    }
+  },
+  "xray": {
+    "run": "nih_resnet18_ap_cached_20261106",
+    "checkpoint_sha256": "de28e079dda8474a56ebd2303c5d81416714d70cfe44f8d7d64a8b9c62500fce",
+    "best_epoch": 3,
+    "test_metrics": {
+      "samples": 25596,
+      "macro_average_precision": 0.2523670423041129,
+      "macro_auroc": 0.7876074072576701,
+      "macro_f1": 0.30032681500018904,
+      "micro_f1": 0.36878061875041945,
+      "valid_auc_classes": 14,
+      "per_class": {
+        "Atelectasis": {
+          "positives": 3279,
+          "auroc": 0.7473603101983216,
+          "average_precision": 0.30506892983401956,
+          "threshold": 0.6742650270462036,
+          "precision": 0.28788137037668315,
+          "recall": 0.515096065873742,
+          "f1": 0.3693417887601137
+        },
+        "Cardiomegaly": {
+          "positives": 1069,
+          "auroc": 0.8802095039456145,
+          "average_precision": 0.3301961341186584,
+          "threshold": 0.6620321273803711,
+          "precision": 0.41569459172852596,
+          "recall": 0.3666978484565014,
+          "f1": 0.38966202783300197
+        },
+        "Effusion": {
+          "positives": 4658,
+          "auroc": 0.8164615800617013,
+          "average_precision": 0.49287808065731087,
+          "threshold": 0.728651762008667,
+          "precision": 0.4238173817381738,
+          "recall": 0.6616573636753972,
+          "f1": 0.5166806370494551
+        },
+        "Infiltration": {
+          "positives": 6112,
+          "auroc": 0.6800707517700119,
+          "average_precision": 0.3750212785530206,
+          "threshold": 0.535736083984375,
+          "precision": 0.3416530278232406,
+          "recall": 0.6830824607329843,
+          "f1": 0.4554876718306786
+        },
+        "Mass": {
+          "positives": 1748,
+          "auroc": 0.7901761691321927,
+          "average_precision": 0.27439696339884195,
+          "threshold": 0.8271310925483704,
+          "precision": 0.3134396355353075,
+          "recall": 0.39359267734553777,
+          "f1": 0.3489728633020543
+        },
+        "Nodule": {
+          "positives": 1623,
+          "auroc": 0.708014733868681,
+          "average_precision": 0.1807203999638698,
+          "threshold": 0.8345417976379395,
+          "precision": 0.26900584795321636,
+          "recall": 0.17005545286506468,
+          "f1": 0.20838052095130238
+        },
+        "Pneumonia": {
+          "positives": 555,
+          "auroc": 0.6782883638400591,
+          "average_precision": 0.04566036185264006,
+          "threshold": 0.27943506836891174,
+          "precision": 0.053767820773930754,
+          "recall": 0.23783783783783785,
+          "f1": 0.08770764119601329
+        },
+        "Pneumothorax": {
+          "positives": 2665,
+          "auroc": 0.8394848547600546,
+          "average_precision": 0.37687260260053485,
+          "threshold": 0.7902066707611084,
+          "precision": 0.4195338512763596,
+          "recall": 0.425515947467167,
+          "f1": 0.4225037257824143
+        },
+        "Consolidation": {
+          "positives": 1815,
+          "auroc": 0.7292471256598463,
+          "average_precision": 0.1479851095023562,
+          "threshold": 0.6813028454780579,
+          "precision": 0.15860379669320268,
+          "recall": 0.428099173553719,
+          "f1": 0.23145665773011617
+        },
+        "Edema": {
+          "positives": 925,
+          "auroc": 0.8284735223651359,
+          "average_precision": 0.15837191499611705,
+          "threshold": 0.5658385753631592,
+          "precision": 0.19137091162143355,
+          "recall": 0.2972972972972973,
+          "f1": 0.23285351397121085
+        },
+        "Emphysema": {
+          "positives": 1093,
+          "auroc": 0.8847555459254592,
+          "average_precision": 0.3407639557586817,
+          "threshold": 0.7597605586051941,
+          "precision": 0.30160372478013453,
+          "recall": 0.5333943275388838,
+          "f1": 0.38532716457369465
+        },
+        "Fibrosis": {
+          "positives": 435,
+          "auroc": 0.7973581628564915,
+          "average_precision": 0.08391488045033792,
+          "threshold": 0.5684158205986023,
+          "precision": 0.16363636363636364,
+          "recall": 0.06206896551724138,
+          "f1": 0.09
+        },
+        "Pleural_Thickening": {
+          "positives": 1143,
+          "auroc": 0.743093281703587,
+          "average_precision": 0.11869634711993363,
+          "threshold": 0.4515683352947235,
+          "precision": 0.11842421330771079,
+          "recall": 0.43132108486439197,
+          "f1": 0.1858273652468903
+        },
+        "Hernia": {
+          "positives": 86,
+          "auroc": 0.9035097955202247,
+          "average_precision": 0.302591633451258,
+          "threshold": 0.7479842901229858,
+          "precision": 0.7142857142857143,
+          "recall": 0.1744186046511628,
+          "f1": 0.2803738317757009
+        }
+      },
+      "warning": "Weak NIH report-mined annotations; scores are not calibrated risks, diagnoses or clinical validation.",
+      "patients": 2797,
+      "thresholds_from_validation": true
+    }
+  }
+}

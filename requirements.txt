@@ -1,0 +1,10 @@
+# Install the GPU-enabled torch and torchvision separately (see README).
+numpy>=2.0,<3
+pandas>=2.2,<3
+scikit-learn>=1.5,<2
+Pillow>=11,<13
+h5py>=3.12,<4
+PyYAML>=6,<7
+pytest>=8,<10
+# For DICOM CT conversion only:
+# pydicom>=3.0,<4

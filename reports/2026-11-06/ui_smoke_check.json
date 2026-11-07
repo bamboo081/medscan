@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-06",
+  "url": "http://127.0.0.1:7860",
+  "browser": "Playwright, installed Google Chrome, headless",
+  "browser_plugin": "Unavailable; local Playwright fallback used",
+  "input": "Synthetic random-noise PNG, seed 42, 224x224; no patient data",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "checks": {
+    "page_title": true,
+    "nonblank": true,
+    "MRI_upload_prediction": true,
+    "CT_upload_prediction": true,
+    "Xray_upload_multilabel_prediction": true,
+    "empty_upload_error_handled": true,
+    "browser_page_errors": [],
+    "desktop_and_mobile_screenshots_inspected": true
+  },
+  "scope": "Smoke checks of local UI wiring only; synthetic model scores have no research or medical performance meaning."
+}

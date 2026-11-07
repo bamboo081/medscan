@@ -1,0 +1,231 @@
+{
+  "run": "mri_convnext_tiny_20261106",
+  "checkpoint_sha256": "8a45a1919f5a93a85501a651848fc843d5201a67d7de10e1c762f57e4b368d93",
+  "config": {
+    "model": "convnext_tiny",
+    "classes": [
+      "glioma",
+      "meningioma",
+      "pituitary"
+    ],
+    "mode": "mri_slice",
+    "image_level": false,
+    "proxy_grouped": false,
+    "ct_limitation": null,
+    "hu_window": null,
+    "size": 224,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "manifest_sha256": "f83d454e12abd03e9486bd3c7ad88bcf1ed4603f249fc88a29cf7f514dae36f4",
+    "seed": 42,
+    "dataset_splits": {
+      "test": 306,
+      "train": 2451,
+      "val": 307
+    },
+    "epochs_requested": 25,
+    "batch_size": 8,
+    "grad_accum_steps": 1,
+    "lr": 0.0001,
+    "augment": true,
+    "pretrained": true,
+    "torch": "2.10.0+cu128",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "created_utc": "2026-11-07T01:47:52.393795+00:00"
+  },
+  "best_epoch": 2,
+  "completed_epochs": 8,
+  "validation_metrics": {
+    "samples": 307,
+    "macro_f1": 0.9647887323943661,
+    "balanced_accuracy": 0.966966366966367,
+    "confusion_matrix": [
+      [
+        137,
+        6,
+        0
+      ],
+      [
+        4,
+        66,
+        0
+      ],
+      [
+        0,
+        0,
+        94
+      ]
+    ],
+    "class_report": {
+      "glioma": {
+        "precision": 0.9716312056737588,
+        "recall": 0.958041958041958,
+        "f1-score": 0.9647887323943662,
+        "support": 143.0
+      },
+      "meningioma": {
+        "precision": 0.9166666666666666,
+        "recall": 0.9428571428571428,
+        "f1-score": 0.9295774647887324,
+        "support": 70.0
+      },
+      "pituitary": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 94.0
+      },
+      "accuracy": 0.9674267100977199,
+      "macro avg": {
+        "precision": 0.9627659574468085,
+        "recall": 0.966966366966367,
+        "f1-score": 0.9647887323943661,
+        "support": 307.0
+      },
+      "weighted avg": {
+        "precision": 0.9677847852704043,
+        "recall": 0.9674267100977199,
+        "f1-score": 0.9675414047804743,
+        "support": 307.0
+      }
+    },
+    "patients": 23,
+    "patient_macro_f1": 1.0,
+    "patient_confusion_matrix": [
+      [
+        9,
+        0,
+        0
+      ],
+      [
+        0,
+        8,
+        0
+      ],
+      [
+        0,
+        0,
+        6
+      ]
+    ]
+  },
+  "test_metrics": {
+    "samples": 306,
+    "macro_f1": 0.913626014599275,
+    "balanced_accuracy": 0.9084999507534719,
+    "confusion_matrix": [
+      [
+        140,
+        3,
+        0
+      ],
+      [
+        5,
+        53,
+        13
+      ],
+      [
+        0,
+        0,
+        92
+      ]
+    ],
+    "class_report": {
+      "glioma": {
+        "precision": 0.9655172413793104,
+        "recall": 0.9790209790209791,
+        "f1-score": 0.9722222222222222,
+        "support": 143.0
+      },
+      "meningioma": {
+        "precision": 0.9464285714285714,
+        "recall": 0.7464788732394366,
+        "f1-score": 0.8346456692913385,
+        "support": 71.0
+      },
+      "pituitary": {
+        "precision": 0.8761904761904762,
+        "recall": 1.0,
+        "f1-score": 0.934010152284264,
+        "support": 92.0
+      },
+      "accuracy": 0.9313725490196079,
+      "macro avg": {
+        "precision": 0.9293787629994527,
+        "recall": 0.9084999507534719,
+        "f1-score": 0.913626014599275,
+        "support": 306.0
+      },
+      "weighted avg": {
+        "precision": 0.9342317578372346,
+        "recall": 0.9313725490196079,
+        "f1-score": 0.9288122689791343,
+        "support": 306.0
+      }
+    },
+    "patients": 23,
+    "patient_macro_f1": 0.9521367521367522,
+    "patient_confusion_matrix": [
+      [
+        9,
+        0,
+        0
+      ],
+      [
+        0,
+        7,
+        1
+      ],
+      [
+        0,
+        0,
+        6
+      ]
+    ]
+  },
+  "split_counts": {
+    "test": {
+      "images": 306,
+      "patients": 23,
+      "proxy_groups": null
+    },
+    "train": {
+      "images": 2451,
+      "patients": 187,
+      "proxy_groups": null
+    },
+    "val": {
+      "images": 307,
+      "patients": 23,
+      "proxy_groups": null
+    }
+  },
+  "label_counts": {
+    "test": {
+      "glioma": 143,
+      "pituitary": 92,
+      "meningioma": 71
+    },
+    "train": {
+      "glioma": 1140,
+      "pituitary": 744,
+      "meningioma": 567
+    },
+    "val": {
+      "glioma": 143,
+      "pituitary": 94,
+      "meningioma": 70
+    }
+  },
+  "thresholds": null,
+  "source_commit": "Not committed at evaluation time; source archive checksum accompanies release."
+}

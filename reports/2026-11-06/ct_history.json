@@ -1,0 +1,79 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 0.11094683905345148,
+    "val_macro_f1": 0.878740321867931,
+    "val_patient_macro_f1": null,
+    "val_balanced_accuracy": 0.9053664434523809
+  },
+  {
+    "epoch": 2,
+    "train_loss": 0.04140256948597614,
+    "val_macro_f1": 0.9326061723312363,
+    "val_patient_macro_f1": null,
+    "val_balanced_accuracy": 0.9366629464285714
+  },
+  {
+    "epoch": 3,
+    "train_loss": 0.018073757114452624,
+    "val_macro_f1": 0.9325616670323317,
+    "val_patient_macro_f1": null,
+    "val_balanced_accuracy": 0.9384300595238095
+  },
+  {
+    "epoch": 4,
+    "train_loss": 0.03287387480184287,
+    "val_macro_f1": 0.9513861918466564,
+    "val_patient_macro_f1": null,
+    "val_balanced_accuracy": 0.9470098586309524
+  },
+  {
+    "epoch": 5,
+    "train_loss": 0.023519397993173756,
+    "val_macro_f1": 0.96628818442147,
+    "val_patient_macro_f1": null,
+    "val_balanced_accuracy": 0.9568917410714286
+  },
+  {
+    "epoch": 6,
+    "train_loss": 0.016404386471633985,
+    "val_macro_f1": 0.9653071666380879,
+    "val_patient_macro_f1": null,
+    "val_balanced_accuracy": 0.9547061011904762
+  },
+  {
+    "epoch": 7,
+    "train_loss": 0.01573937879655823,
+    "val_macro_f1": 0.8839989221863432,
+    "val_patient_macro_f1": null,
+    "val_balanced_accuracy": 0.9141322544642858
+  },
+  {
+    "epoch": 8,
+    "train_loss": 0.020861255535830105,
+    "val_macro_f1": 0.9635679844915404,
+    "val_patient_macro_f1": null,
+    "val_balanced_accuracy": 0.95458984375
+  },
+  {
+    "epoch": 9,
+    "train_loss": 0.01904078937110031,
+    "val_macro_f1": 0.9503281334241015,
+    "val_patient_macro_f1": null,
+    "val_balanced_accuracy": 0.9479166666666667
+  },
+  {
+    "epoch": 10,
+    "train_loss": 0.008072192655819653,
+    "val_macro_f1": 0.9496826496931952,
+    "val_patient_macro_f1": null,
+    "val_balanced_accuracy": 0.9573102678571429
+  },
+  {
+    "epoch": 11,
+    "train_loss": 0.01815015764548246,
+    "val_macro_f1": 0.9632478146645495,
+    "val_patient_macro_f1": null,
+    "val_balanced_accuracy": 0.9632859002976191
+  }
+]
