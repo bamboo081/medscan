@@ -1,5 +1,7 @@
 # GitHub commit and release plan
 
+Published repository: https://github.com/bamboo081/medscan (public). The prepared source release was committed and pushed to `main` on 2026-11-06. The checklist below records the preparation and documents future release steps. GitHub Actions status is available at https://github.com/bamboo081/medscan/actions.
+
 ## Prepared product
 
 MedScan is an MIT-licensed source release for local, non-clinical MRI/CT/X-ray research. It includes training, caching, leakage-aware preparation, evaluation, inference, a localhost Gradio demo, tests, model cards and aggregate benchmark reports. It contains no source scans, patient identifiers, per-image predictions, cached tensors or model weights.
@@ -8,7 +10,7 @@ The recommended release title is **MedScan research prototype — evaluated moda
 
 ## Local preparation
 
-The current source and reports are staged on local branch `main` for review; no commit, remote repository, push or public release is made by this preparation. Existing data, weights, caches and old source copies remain local and ignored.
+The source and reports were reviewed on local branch `main`, committed, and pushed to `bamboo081/medscan`. Existing data, weights, caches and old source copies remain local and ignored. No version tag or GitHub release has been created.
 
 Review the exact candidate commit:
 
@@ -21,7 +23,7 @@ git diff --cached -- README.md RESULTS.md MODEL_CARDS.md LICENSE
 git ls-files data runs .venv medscan-project-code
 ```
 
-The archive `runs/release_20261106/medscan-research-v0.1.0-source.zip` contains the same staged release files, plus a checksummed file manifest. Its SHA256 is recorded alongside it. This gives a concrete alternative to committing from the working tree. Local run folders and model weights are not part of that archive.
+The archive `runs/release_20261106/medscan-research-v0.1.0-source.zip` captures the initially prepared release files before the publication-status documentation update, plus a checksummed file manifest. Its SHA256 is recorded alongside it. This gives a concrete alternative to committing from the working tree. Local run folders and model weights are not part of that archive.
 
 ## Proposed first commit
 
